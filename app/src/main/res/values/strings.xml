@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Material Design</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="item_1">Toolbar</string>
+    <string name="item_2">FAB</string>
+    <string name="item_3">tabs</string>
+    <string name="item_4">Coordinator layout w/ fab and snackbar</string>
+    <string name="item_5">Coordinator layout w/ appbarlayout</string>
+    <string name="item_6">CollapsingToolbarLayout</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+</resources>
