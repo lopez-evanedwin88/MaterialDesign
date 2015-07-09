@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
+
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -47,11 +48,17 @@ public class MainActivity extends AppCompatActivity{
                 //Check to see which item was being clicked and perform appropriate action
                 switch (menuItem.getItemId()) {
                     //Replacing the main content with ContentFragment
-                    case R.id.drawer_item_1:
-                        //SomeFragment fragment = new SomeFragment();
-                        //android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                        // fragmentTransaction.replace(R.id.frame,fragment);
-                        //fragmentTransaction.commit();
+                    case R.id.drawer_item_1: {
+
+                    }
+
+                    case R.id.drawer_item_2:
+                    {
+                        FabFragment fragment = new FabFragment();
+                        android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction.replace(R.id.content, fragment);
+                        fragmentTransaction.commit();
+                    }
 
                 }
                 return true;

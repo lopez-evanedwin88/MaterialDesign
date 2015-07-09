@@ -11,4 +11,6 @@
     <string name="item_6">CollapsingToolbarLayout</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
+    <string name="snackbar">You Click Me!</string>
+    <string name="undo">UNDO</string>
 </resources>
