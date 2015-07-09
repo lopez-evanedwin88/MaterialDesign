@@ -1,28 +1,24 @@
 package com.example.lopez.materialdesign;
 
-import android.app.Fragment;
-import android.os.Bundle;
-
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
 /**
  * Created by Administrator on 7/9/2015.
  */
-public class FabFragment extends android.support.v4.app.Fragment {
+public class CoordinatingLayoutFragment extends android.support.v4.app.Fragment {
 
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fab,container,false);
+    {
+        View v = inflater.inflate(R.layout.coordinatinglayout,container,false);
 
         CoordinatingLayout coor = (CoordinatingLayout) v.findViewById(R.id.main_content);
         DrawerLayout drawerLayout = (DrawerLayout) v.findViewById(R.id.drawer_layout);
         Toolbar toolbar = (Toolbar) v.findViewById(R.id.toolbar);
         v.setSupportActionBar(toolbar);
+
+        TabLayout tablayout = (TabLayout) v.findViewById(R.id.tabs);
+        tablayout.addTab(tablayout.newTab().setText("Tab1"));
+        tablayout.addTab(tablayout.newTab().setText("Tab2"));
+        tablayout.addTab(tablayout.newTab().setText("Tab3"));
+
+
 
         NavigationView navigationView = (NavigationView) v.findViewById(R.id.navigation);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
