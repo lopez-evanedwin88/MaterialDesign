@@ -3,25 +3,22 @@ package com.example.lopez.materialdesign;
 /**
  * Created by Administrator on 7/9/2015.
  */
-public class CoordinatingLayoutFragment extends android.support.v4.app.Fragment {
-
+public class CollapsingLayout extends android.support.v4.app.Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.coordinatinglayout,container,false);
+        View v = inflater.inflate(R.layout.collapsinglayout,container,false);
+
 
         CoordinatingLayout coor = (CoordinatingLayout) v.findViewById(R.id.main_content);
         DrawerLayout drawerLayout = (DrawerLayout) v.findViewById(R.id.drawer_layout);
         Toolbar toolbar = (Toolbar) v.findViewById(R.id.toolbar);
         v.setSupportActionBar(toolbar);
 
-        TabLayout tablayout = (TabLayout) v.findViewById(R.id.tabs);
-        tablayout.addTab(tablayout.newTab().setText("Tab1"));
-        tablayout.addTab(tablayout.newTab().setText("Tab2"));
-        tablayout.addTab(tablayout.newTab().setText("Tab3"));
-
-
+        CollapsingToolbarLayout collapsingToolbar =
+                (CollapsingToolbarLayout) v.findViewById(R.id.collapsing_toolbar);
+        collapsingToolbar.setTitle("Dhong");
 
         NavigationView navigationView = (NavigationView) v.findViewById(R.id.navigation);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -109,6 +106,6 @@ public class CoordinatingLayoutFragment extends android.support.v4.app.Fragment 
 
         return v;
     }
-        }
+}
 
 
