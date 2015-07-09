@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <color name="ColorPrimary">#3E2723</color>
+    <color name="ColorPrimaryDark">#212121</color>
+    <color name="ColorPrimaryLight">#FF8A65</color>
+    <color name="AccentPrimary">#BF360C</color>
+    <color name="AccentPrimaryDark">#F4511E</color>
+    <color name="tabsScrollColor">#004D40</color>
 <color name="drawer_item_text">#CFD8DC</color>
 <color name="ternary">#E65100</color>
 </resources>

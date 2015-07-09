@@ -16,11 +16,11 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="@style/Widget.AppCompat.Toolbar"
-            app:titleTextAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"/>
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:elevation="8dp"/>
 
         <!-- Real content goes here -->
         <FrameLayout
