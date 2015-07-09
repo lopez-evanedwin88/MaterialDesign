@@ -41,14 +41,15 @@ public class FabFragment extends android.support.v4.app.Fragment {
                     //Replacing the main content with ContentFragment
                     case R.id.drawer_item_1: {
 
+                        ToolBarFragment fragment = new ToolBarFragment();
+                        android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction.replace(R.id.content, fragment);
+                        fragmentTransaction.commit();
                     }
 
                     case R.id.drawer_item_2:
                     {
-                        FabFragment fragment = new FabFragment();
-                        android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                        fragmentTransaction.replace(R.id.content, fragment);
-                        fragmentTransaction.commit();
+
                     }
 
                     case R.id.drawer_item_3:
@@ -61,9 +62,19 @@ public class FabFragment extends android.support.v4.app.Fragment {
                     case R.id.drawer_item_4:
                     {
 
+                        CoordinatingLayoutFragment fragment = new CoordinatingLayoutFragment();
+                        android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction.replace(R.id.content, fragment);
+                        fragmentTransaction.commit();
+
                     }
                     case R.id.drawer_item_5:
                     {
+
+                        CollapsingLayout fragment = new CollapsingLayout();
+                        android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction.replace(R.id.content, fragment);
+                        fragmentTransaction.commit();
 
                     }
 

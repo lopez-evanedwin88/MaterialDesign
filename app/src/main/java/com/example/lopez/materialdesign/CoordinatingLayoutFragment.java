@@ -39,6 +39,10 @@ public class CoordinatingLayoutFragment extends android.support.v4.app.Fragment 
                 switch (menuItem.getItemId()) {
                     //Replacing the main content with ContentFragment
                     case R.id.drawer_item_1: {
+                        ToolBarFragment fragment = new ToolBarFragment();
+                        android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction.replace(R.id.content, fragment);
+                        fragmentTransaction.commit();
 
                     }
 
@@ -63,6 +67,10 @@ public class CoordinatingLayoutFragment extends android.support.v4.app.Fragment 
                     }
                     case R.id.drawer_item_5:
                     {
+                        CollapsingLayout fragment = new CollapsingLayout();
+                        android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction.replace(R.id.content, fragment);
+                        fragmentTransaction.commit();
 
                     }
 
